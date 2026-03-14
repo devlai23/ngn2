@@ -15,7 +15,7 @@ The codebase is organized so that each script in [scripts] writes its outputs to
 Every script supports:
 
 ```bash
-./knight/bin/python scripts/<script>.py --csv combined_coded_responses.csv --outdir outputs/<script>
+python scripts/<script>.py --csv combined_coded_responses.csv --outdir outputs/<script>
 ```
 
 If `--csv` is omitted, the scripts default to `combined_coded_responses.csv`.
@@ -24,10 +24,10 @@ If `--outdir` is omitted, the scripts default to `outputs/<script-name>/`.
 Examples:
 
 ```bash
-./knight/bin/python scripts/q1a.py
-./knight/bin/python scripts/q1e.py
-./knight/bin/python scripts/question_plotting.py
-./knight/bin/python scripts/q3_pairwise.py --data combined_coded_responses.csv
+python scripts/q1a.py
+python scripts/q1e.py
+python scripts/question_plotting.py
+python scripts/q3_pairwise.py --data combined_coded_responses.csv
 ```
 
 Note: `q3_pairwise.py` and `q3_index.py` use `--data` rather than `--csv`.
